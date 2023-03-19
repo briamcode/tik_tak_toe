@@ -1,0 +1,92 @@
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.game-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.game-board {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    border: 2px solid #ffffff66;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #1c1c1c;
+    border: 2px solid #ffffff66;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ffffff33;
+}
+
+.cell.x:before {
+    content: "X";
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff7b00;
+}
+
+.cell.o:before {
+    content: "O";
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00d8ff;
+}
+
+.status {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.reset-button {
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #ffffff66;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.reset-button:hover {
+    background-color: #ffffffaa;
+}
+
+event-log {
+    background-color: #ffffffaa;
+}
